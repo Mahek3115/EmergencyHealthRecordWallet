@@ -8,13 +8,6 @@
 
 ---
 
-## 🚨 Hackathon Safety Disclaimer
-
-> **IMPORTANT**: This is a healthcare record management prototype built for a hackathon. 
-> The system **only stores, organizes, and displays patient-provided and hospital-provided medical records**. 
-> It does **NOT** make medical diagnoses or treatment decisions.
-
----
 
 ## 🏥 Problem Statement & Solution
 
@@ -65,100 +58,9 @@ Create Admission (ADM-2026-00981) → Perform Treatment & Procedures
 ↓
 Finalize Treatment Record → AUTOMATICALLY APPENDS TO PATIENT'S TIMELINE
 ```
+-
 
----
-
-## ⚡ How to Run Locally
-
-### Prerequisites
-- Node.js (v18+) & npm
-
-### Installation & Execution
-```bash
-# 1. Open project directory
-cd C:\Users\user\.gemini\antigravity\scratch\emergency-health-wallet
-
-# 2. Install dependencies (if not already installed)
-npm install
-
-# 3. Start local development server
-npm run dev
-```
-
-Open `http://localhost:5173` in your browser.
-
----
-
-## 🌐 How to Deploy to Production / Live Hackathon URL
-
-### Production Build Command
-First generate the static distribution bundle:
-```bash
-npm run build
-```
-This produces an optimized production bundle in the `dist/` directory.
-
----
-
-### Option 1: Firebase Hosting (Recommended Free & Fast Deployment)
-
-Firebase Hosting provides a free `https://<your-app>.web.app` domain with SSL.
-
-```bash
-# 1. Login to Firebase
-npx -y firebase-tools@latest login
-
-# 2. Initialize Firebase Hosting
-npx -y firebase-tools@latest init hosting
-
-# Configuration Answers:
-# ? What do you want to use as your public directory? dist
-# ? Configure as a single-page app (rewrite all urls to /index.html)? Yes
-# ? Set up automatic builds and deploys with GitHub? No
-
-# 3. Build & Deploy
-npm run build
-npx -y firebase-tools@latest deploy
-```
-
----
-
-### Option 2: Vercel (1-Click Deployment)
-
-```bash
-# Deploy using Vercel CLI
-npx vercel
-```
-Follow the interactive prompts to get an instant `https://<your-project>.vercel.app` URL.
-
----
-
-### Option 3: Netlify Drag & Drop / CLI
-
-```bash
-# Build the project
-npm run build
-
-# Deploy via Netlify CLI
-npx netlify-cli deploy --prod --dir=dist
-```
-Or simply drag the `dist/` folder into [app.netlify.com/drop](https://app.netlify.com/drop).
-
----
-
-### Option 4: GitHub Pages
-
-```bash
-# Install gh-pages dependency
-npm install -D gh-pages
-
-# Deploy to GitHub Pages
-npx gh-pages -d dist
-```
-
----
-
-## 🔑 Pre-Configured Demo Accounts for Judges
+## 🔑 Pre-Configured Demo Accounts 
 
 Use the **Floating Presentation Switcher** at the bottom of the app to instantly toggle between demo accounts:
 
@@ -184,15 +86,8 @@ Use the **Floating Presentation Switcher** at the bottom of the app to instantly
 
 ---
 
-## 🌟 Hackathon Highlights & Features
-
-- **Multi-Language Support**: Instant UI toggle for **English**, **Hindi (हिंदी)**, and **Marathi (मराठी)**.
-- **Printable Emergency QR Card**: Download or print wallet-sized emergency card with QR code and blood group badge.
-- **Emergency Lockscreen Graphic**: Smartphone lockscreen wallpaper generator.
-- **Interactive Visual Timeline**: Chronological medical history node visualization.
-- **Local Persistence**: State automatically persists across page refreshes using `localStorage`.
-
----
+## 🌟 
 
 ## 📜 License
 Healthcare Hackathon Prototype. Open for emergency reference software research.
+use
